@@ -49,7 +49,7 @@ public class RunStudy {
                 System.out.println(String.format("틀렸습니다 정답은 %s 입니다.",correct));
             }
             num+=1;
-            if(num==50) break;
+            if(num==100) break;
         }
         System.out.println("틀린것 복습합니다.");
         incorrect.keySet().forEach(x->{
