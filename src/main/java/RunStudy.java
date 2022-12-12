@@ -52,6 +52,9 @@ public class RunStudy {
             if(num==50) break;
         }
         System.out.println("틀린것 복습합니다.");
+        incorrect.keySet().forEach(x->{
+            System.out.println(String.format("%s : %s",x,incorrect.get(x)));
+        });
         List<String> uncolwordjapan = incorrect.keySet().stream().collect(Collectors.toList());
         num = 1;
         while(true)
