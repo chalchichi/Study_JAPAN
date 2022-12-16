@@ -14,7 +14,7 @@ public class RunStudy {
         String ans= null;
         boolean re = true;
         while (re) {
-            System.out.print("어떤 언어로 할까요? 1.히라가나  2.가타카나  3.섞어서 : ");
+            System.out.print("어떤 언어로 할까요? 1.히라가나  2.가타카나  3.섞어서  4.숫자 : ");
             ans = sc.nextLine();
             switch (ans) {
                 case "1":
@@ -27,6 +27,10 @@ public class RunStudy {
                     break;
                 case "3":
                     japaness = new TotalWord();
+                    re = false;
+                    break;
+                case "4":
+                    japaness = new Number();
                     re = false;
                     break;
                 default:
