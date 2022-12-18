@@ -32,6 +32,7 @@ public class RunStudy {
                 case "4":
                     japaness = new Number();
                     re = false;
+                    System.out.println("음성 받아쓰기를 사용해 주세요");
                     break;
                 default:
                     System.out.println("1,2,3 중에 선택해주세요");
